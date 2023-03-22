@@ -483,6 +483,7 @@ main h2 {
 .main-tittle .backdrop .link-checkbox {
   text-decoration: underline;
   color: var(--color-tex-primary);
+
 }
 .main-tittle .backdrop .modal .button-submit {
   display: flex;
