@@ -90,72 +90,79 @@
                   <use href="./Img/icon.svg#icon-cerrar"></use>
                 </svg>
               </button>
-              <form class="modal-form" autocomplete="on">
-                <p class="title-form">
-                  Leave your information, we will contact you
-                </p>
-                <label class="label-input" for="name"
-                  >Name
+              <p class="title-form">
+                Leave your information, we will contact you
+              </p>
+              <form class="form">
+                <label class="form-label">
+                  <span class="label-text">Name</span>
                   <input
-                    class="input-form"
                     type="text"
+                    class="form-input"
                     name="name"
-                    id="name"
                     required
+                    minlength="3"
+                    placeholder=" "
                   />
-                  <svg class="icon-form" width="18" height="18">
-                    <use href="images/icons.svg#icon-name"></use>
+                  <svg class="icon-form" width="12px" height="12px">
+                    <use href="./Img/icon.svg#icon-name"></use>
                   </svg>
                 </label>
-                <label class="label-input" for="telefono"
-                  >Phone
+                <label class="form-label">
+                  <span class="label-text">Phone</span>
                   <input
-                    class="input-form"
-                    type="telefono"
-                    name="telefono"
-                    id="telefono"
+                    type="text"
+                    class="form-input"
+                    name="phone"
                     required
+                    minlength="3"
+                    placeholder=" "
                   />
-                  <svg class="icon-form" width="18" height="18">
-                    <use href="images/icons.svg#icon-Phone"></use>
+                  <svg class="icon-form" width="13px" height="13px">
+                    <use href="./Img/icon.svg#icon-Phone"></use>
                   </svg>
                 </label>
-                <label class="label-input" for="email"
-                  >Email
+                <label class="form-label" for="mail">
+                  <span class="label-text">E-mail</span>
                   <input
-                    class="input-form"
                     type="email"
-                    name="email"
-                    id="email"
+                    class="form-input"
+                    name="mail"
+                    id="mail"
                     required
+                    placeholder=" "
                   />
-                  <svg class="icon-form" width="18" height="18">
-                    <use href="images/icons.svg#icon-email"></use>
+                  <svg class="icon-form" width="15px" height="12px">
+                    <use href="./Img/icon.svg#icon-email"></use>
                   </svg>
                 </label>
-                <label class="comment-field">Comments</label>
-                <textarea
-                  class="comment"
-                  name="comment"
-                  id="comment"
-                  rows="7"
-                  placeholder="Introduzca el texto"
-                >
-                </textarea>
-                <label class="label-checkbox">
+                <label class="form-label" for="comments">
+                  <span class="label-text">Comments</span>
+                  <textarea
+                    class="form-input"
+                    name="comments"
+                    required
+                    rows="8"
+                    id="comments"
+                    placeholder="Enter the text"
+                  ></textarea>
+                </label>
+                <label class="check">
                   <input
+                    class="check-input"
                     type="checkbox"
                     name="policy"
-                    value="agreement"
-                    class="checkbox"
+                    value="accept"
                   />
-                  <span class="icon-check"></span>
-                  <span class="form-text">
-                    I agree with the newsletter and accept the
-                    <a href="" class="link-checkbox">terms and Conditions</a>
-                  </span>
+                  <svg class="check-icon" width="16px" height="15px">
+                    <use href="./Img/icon.svg#icon-check"></use>
+                  </svg>
+                  <span class="form-policy"
+                    >I agree with the newsletter and accept the terms and
+                    Conditions</span
+                  >
                 </label>
-                <button type="submit" class="button-submit">Send</button>
+                <button class="send" type="submit">Send</button>
               </form>
             </div>
           </div>
